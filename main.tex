@@ -1,0 +1,323 @@
+\documentclass{article}
+\usepackage[letterpaper,hmargin=1in,vmargin=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%%% Formatting Notes
+% This package allows for block paragraphs - no need for \\ or \noindent
+\usepackage{parskip}  
+
+
+
+\begin{document}
+These are notes for the directed study on Fourier Analysis from Stein
+and Shakarchi \cite{Stein:2003:FA}.
+
+\section{The Genesis of Fourier Analysis}
+
+Add any questions about Chapter 1 here.
+
+\textbf{Exercises:} Complete 3, 4, 5, 11. 
+
+\textbf{3.} A sequence of complex numbers  $\{w\}_{n=1}^{\infty}$ is said to converge if there exists a $w \in \mathbb{C}$ such that 
+\[
+\lim_{n\rightarrow \infty} |w_n - w | = 0,
+\]
+and we say that $w$ is a limit of the sequence.\\
+\textbf{(a)} Show that a converging sequence of complex numbers has a unique limit.
+\begin{proof} Suppose by way of contradiction that the sequence $\{w\}_{n=1}^{\infty}$ converges to complex numbers $r$ and $l$. That is,
+\[
+\lim _{n\rightarrow \infty}|w_n - r| =  0, \qquad \lim _{n\rightarrow \infty}|w_n - l| = 0   
+\]
+Consider the following,
+
+\begin{align*}    
+&|r-l| = |(r-w_n ) + (w_n - l)| \leq |r-w_n|+|w_n - l| = |w_n  -r| +|w_n -l| \\
+\implies &\lim_{n\rightarrow \infty} |r-l| \leq \lim_{n\rightarrow \infty} |w_n - r| + \lim_{n\rightarrow \infty} |w_n - l| \\
+\implies & |r-l|\leq 0+0 = 0.
+\end{align*}
+Now since $|r-l| \geq 0$ and as we just demonstrated it is also $|r-l| \leq 0$ then $|r-l| =0$ which implies $r=l$. Then by way of contradicition the limit of a converging sequence of complex numbers has unique limit.
+\end{proof}
+\\
+The sequence $\{w_n\}_{n=1}^{\infty}$ is said to be a \textbf{Cauchy sequence} if for every $\epsilon > 0 $ there exists a positive integer $N$ such that 
+\[
+|w_n - w_m| < \epsilon \qquad \text{whenever $n,m > N$.}
+\]
+\noindent \textbf{(b)} Prove that a sequence of complex numbers converges if and only if it is a Cauchy sequence. [Hint: A similar theorem exists for the convergence of a
+sequence of real numbers. Why does it carry over to sequences of complex
+numbers?]
+\begin{proof}
+$(\implies)$ Let $\epsilon >0$ be given. Suppose the sequence of complex numbers $\{w_n\}_{n=1}^{\infty}$ converges to $w$, that is,
+\[
+\forall \epsilon >0, \exists N \text{  such that } \forall n (n>N) \implies |w_n -w| < \epsilon
+\]
+So take $n,m \in \mathbb{N}$ with $n>m\geq N$ such that
+\[
+|w_n - w| < \frac{\epsilon}{2} \qquad \text{ and } \qquad |w_m - w | < \frac{\epsilon}{2}
+\]
+And consider the following, 
+\begin{align*}
+|w_n-w_m| = |(w_n - w) + (w-w_m)| &\leq |w_n - w| + |w-w_m| = |w_n - w| + |w_m - w| \\
+&< \frac{\epsilon}{2} + \frac{\epsilon}{2} \\
+&< \epsilon\\
+&\implies |w_n - w_m| < \epsilon
+\end{align*}
+$(\impliedby)$ Suppose the sequence $\{w_n\}_{n=1}^{\infty}$ is a Cauchy sequence, then $\exists n,m,N \in \mathbb{N}$ such that
+\[
+&|w_n - w_m| < \epsilon \qquad \text{ whenever $n>m,\geq N$} 
+\]
+And suppose $w_n = x_n + iy_n$ and $w_m = x_m + iy_m$ for any arbitrary real sequences $x_n,x_my_n,y_m$. Then
+\begin{align*}
+&\implies |w_n - w_m|^2  = (x_n - x_m)^2 + (y_n - y_m)^2 <\epsilon^2 \\
+&\implies (x_n- x_m)^2 <\epsilon^2 \qquad \text{ and } \qquad (y_n - y_m)^2 <\epsilon^2 \\
+&\implies |x_n- x_m| <\epsilon \qquad \text{ and } \qquad |y_n - y_m| <\epsilon
+\end{align*}
+Therefore $\{x_n\}$ and $\{y_n\}$ are Cauchy sequences. Therefore, there exists real numbers $x$ and $y$ such that  $\{x_n\} \rightarrow x$ and $\{y_n\} \rightarrow y$. Then we define $w= x+iy$. Then by definition of a Cauchy sequence there exists a $P\in \mathbb{N}$ such that for any $n>P$ we have $|x_n - x| < \frac{\epsilon}{\sqrt{2}}$ and there exits a $Q\in \mathbb{N}$ such that for any $n>Q$ we have $|y_n - y| <\frac{\epsilon}{\sqrt{2}}$. Now take the bigger number between $P$ and $Q$ and denoted it $R$. And consider $n \in \mathbb{N}$ such that $n>R$ then,
+\begin{align*}
+|w_n - w|^2 &= (x_n-x)^2 + (y_n - y)^2 < \epsilon^2 \\
+\implies &< \left(\frac{\epsilon}{\sqrt{2}}\right)^2 + \left(\frac{\epsilon}{\sqrt{2}}\right)^2 \\
+\implies &< \epsilon^2 \\
+\implies |w_n -w| &< \epsilon
+\end{align*}
+Therefore the Cauchy sequence $\{w_n\}_{n=1}^{\infty}$ converges.
+\end{proof}
+A series $\sum_{n=1}^{\infty} z_n$ of complex numbers is said to converge if the sequence formed by the partial sums
+\[
+S_N = \sum_{n=1}^{N}z_n
+\]
+converges. Let $\{a_n\}_{n=1}^{\infty}$ be a sequence of non-negative real numbers such that the series $\sum_n a_n$ converges.\\
+\\ \textbf{(c)} Show that if $\{z_n\}_{n=1}^{\infty}$ is a sequence of complex numbers satisfying $|z_n|\leq a_n$ for all $n$, then the series $\sum_n z_n$ converges. [Hint: Use the Cauchy criterion].\\
+\\
+\begin{proof}
+Let $\{a_n\}$ be a sequence of non-negative real numbers such that $\sum_{n} a_n$ converges. Assume $\{z_n\}$ is a series of complex numbers such that $|z_n| \leq a_n$ for all $n$.
+
+\vspace{15pt}
+\begin{lemma}
+For any real sequence $\{a_n\}$, the infinite series $\sum_{n=1}^{\infty} a_n$ converges if
+and only if 
+$$\forall(\epsilon > 0) \exists (N \in \mathbb{N}) \text{ such that } \forall(m, l \in \{m, l : m \geq l > N\}),$$
+$$|s_m - s_l| = \biggl|\sum_{n = l+1}^{m} a_n \biggr| < \epsilon,$$
+Where $s_n$ is the $n$th partial sum of the series $\sum a_n$.
+\end{lemma}   
+%(source: https://people.maths.ox.ac.uk/flynn/genus2/AnI0506/analysisI-wk6.pdf) 
+
+\vspace{15pt}
+$a_n$ is a convergent sequence of real numbers. Thus, by the Cauchy criterion,
+$\forall \epsilon > 0,$ $\exists N \in \mathbb{N}$ such that $\forall m, l \in \mathbb{N}$ such that $m \geq l > N$,
+$$|s_m - s_l| = \biggl|\sum_{n = l+1}^{m} a_n \biggr| = \sum_{n = l+1}^{m} a_n< \epsilon,$$
+
+where $s_m$ and $s_l$ are partial sums of the series $\sum a_n$.
+
+\vspace{15pt}
+Considering that
+$$ |z_{n}| \leq a_{n}$$
+for each $n \in \{l+1, l+2, \cdots m\},$
+$$\implies \sum_{n = l+1}^{m} |z_n| \leq \sum_{n = l+1}^{m} a_n < \epsilon.$$
+
+
+\vspace{15pt} 
+Next, we would like to show that 
+$$\biggl| \sum_{n=l+1} ^ m z_n \biggr| \leq \sum_{n = l+1}^{m} |z_n|.$$
+
+Intuitively, (geometrically,) this should follow, because we can think of each $z_i$ as a vector
+in the complex plane. The total distance of the journey taken by adding each
+vector $z_i$ tip to tail is greater than or equal to the straightline distance
+from the origin to the tip of the last vector $z_i$
+
+\vspace{15pt}
+The proof is by induction on $m$, (starting from $m=l+1$, not $m=1$.)
+
+\vspace{15pt}
+(Base case) For $m = l+1$,
+$$\biggl| \sum _{n=l+1}^{l+1} z_n\biggr| = |z_{l+1}| = \sum_{n=l+1}^{l+1} |z_{n}| $$
+
+\vspace{15pt}
+(Induction step) Assume it to be true that for some $k \in \mathbb{N}$ s.t. $l+2 \leq k$,
+$$\biggl| \sum _{n=l+1}^{k} z_n\biggr| \leq \sum_{n=l+1}^{k} |z_{n}|. $$
+$$ \implies |z_{k+1}| + \biggl| \sum _{n=l+1}^{k} z_n\biggr| \leq |z_{k+1}| + \sum_{n=l+1}^{k} |z_{n}|$$
+On the right-hand side, we have 
+$$|z_{k+1}| + \sum_{n=l+1}^{k} |z_{n}| = \sum_{n=l+1}^{k+1} |z_{n}|$$
+On the left-hand side, by the triangle inequality (Exercise 1d), we have
+$$|z_{k+1}| + \biggl| \sum _{n=l+1}^{k} z_n\biggr| \geq \biggl| \sum _{n=l+1}^{k+1} z_n\biggr|$$
+$$\implies \biggl| \sum _{n=l+1}^{k+1} z_n\biggr| \leq \sum_{n=l+1}^{k+1} |z_{n}|.$$
+
+Thus, the induction hypothesis holds for all $n \in N$.
+
+And recall that, for all $m \geq l+1$, 
+$$\sum_{n=l+1}^{m} |z_{n}| \leq \sum_{n=l+1}^{k+1} a_{n} \leq \biggl| \sum_{n=l+1}^{k+1} a_{n} \biggr| < \epsilon$$
+
+\vspace{15pt}
+Thus we have shown that, given any $\epsilon > 0$, there exists an $N \in \mathbb{N}$ such that 
+for all $l > N, m \geq l$, 
+$$\biggl| \sum _{n=l+1}^{m} z_n\biggr| < \epsilon $$
+$$\Leftrightarrow \biggl| \sum _{n=1}^{m} z_n - \sum _{n=1}^{l} z_n\biggr| < \epsilon $$
+
+Or in other words, the sequence (of partial sums of a series) $S_N = \sum _{n=1} ^{N} z_n$ is Cauchy, which (by exercise 3b,) implies
+that the sequence $S_N$ converges. 
+
+\vspace{15pt}
+Therefore, (by the fact given at the start of Exercise 3c,) the series
+$$\sum_{n=1} ^{\infty} z_n$$
+converges.
+\end{proof}
+\\
+\textbf{4.} For $z\in \mathbb{C}$, we define the complex exponential by 
+\[
+e^z = \sum_{n=0}^{\infty}\frac{z^n}{n!}. 
+\]
+\textbf{(a)} Prove that the above definition makes sense, by showing that the series
+converges for every complex number $z$. Moreover, show that the convergence is uniform on every bounded subset of $\mathbb{C}$. 
+\begin{proof}
+Define the following partial sums
+\[
+S_p = \sum_{n=0}^p \frac{z^n}{n!} \qquad S_q = \sum_{n=0}^q \frac{z^n}{n!} \quad \text{ where $p,q\in \mathbb{N}$ and $p>q$.}
+\]
+Now consider the following: 
+\begin{align*}
+&S_p - S_q = \sum_{n=0}^p \frac{z^n}{n!} - \sum_{n=0}^q \frac{z^n}{n!}   = \sum_{n=q+1}^p \frac{z^n}{n!} \\
+\implies &|S_p - S_q| = \left|\sum_{n=q+1}^p \frac{z^n}{n!}\right| \leq \sum_{n=q+1}^p \frac{|z|^n}{n!} \quad \text{Let $b= |z|$ where $b\in \mathbb{R}$ and $b\geq 0$.} \\
+\implies &|S_p - S_q| \leq \sum_{n=q+1}^p \frac{b^n}{n!} \leq \sum_{n=q+1}^{\infty} \frac{b^n}{n!}
+\end{align*}
+Where we are able to extend the infinite sum to positive infinity as all terms in sum are non-negative. Furthermore the infinite series converges by the Ratio Test:
+\[
+\lim _{n\rightarrow \infty}\frac{b^{n+1}}{(n+1)!} \cdot \frac{n!}{b^n} = \frac{b}{n+1} \rightarrow 0 \quad \text{which shows convergence by Ratio Test.}
+\]
+Therefore we choose an $N\in \mathbb{N}$ such that $p>q\geq N$ and such that
+\[
+\sum_{n = N+1}^{\infty} \frac{b^n}{n!} < \epsilon
+\]
+ensuring the following,
+\[
+|S_p - S_q| \leq \sum_{n=q+1}^p \frac{b^n}{n!} \leq \sum_{n=q+1}^{\infty} \frac{b^n}{n!} \leq \sum_{n = N+1}^{\infty} \frac{b^n}{n!} < \epsilon
+\]
+\[
+\implies |S_p -S_q|<\epsilon
+\]
+Therefore, by the Cauchy criterion $e^z =\sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely. Now showing convergence on a bounded subset $S$ of $\mathbb{C}$ is the same proof but just stating that $b=\sup\{|z|: z\in S\}$.
+\end{proof}
+\\
+\textbf{(b)} If $z_1,z_2$ are two complex numbers, prove that $e^{z_1}e^{z_2}=e^{z_1+z_2}$. [Hint: use the binomial theorem to expand $(z_1 +z_2)^n$, as well as the formula for binomial coefficients.]\\
+\\
+\\
+\textbf{(c)} Show that if $z$ is purely imaginary, that is, $z=iy$ with $y\in \mathbb{R}$, then
+\[
+e^{iy}=\cos(y)+i\sin(y) 
+\]
+This is Euler's identity. [Hint: Use power series.]
+\begin{proof}
+Let $y\in \mathbb{R}$ then we can express $e^{iy}$ as the following power series
+\[
+e^{iy} = \sum_{n=0}^{\infty}\frac{i^n y^n}{n!}
+\]
+Now we separate our infinite sum into two infinite sums of even and odd as follows:
+\begin{align*}
+&e^{iy} =  \sum_{n=0}^{\infty}\frac{i^n y^n}{n!} =  \sum_{k=0}^{\infty}\frac{i^{2k} y^{2k}}{(2k)!} +  \sum_{k=0}^{\infty}\frac{i^{2k+1} y^{2k+1}}{(2k+1)!} \\
+&e^{iy} = \sum_{k=0}^{\infty}\frac{(-1)^k y^{2k}}{(2k)!} +  i\sum_{k=0}^{\infty}\frac{(-1)^k y^{2k+1}}{(2k+1)!}
+\end{align*}
+Now we recognize both of these infinite sums as sine and cosine power series and arrive at the following:
+\[
+e^{iy} = \sum_{k=0}^{\infty}\frac{(-1)^k y^{2k}}{(2k)!} +  i\sum_{k=0}^{\infty}\frac{(-1)^k y^{2k+1}}{(2k+1)!} = \cos(y) +i\sin(y)
+\]
+\end{proof}
+\\
+\textbf{(e)} prove that $e^z = 1$ if and only if $z=2\pi ki$ for some integer $k$.
+\begin{proof}\\
+$\left(\implies\right)$ Assume $z = 2 \pi k i$.
+By Euler's identity,
+$$e^z = e^{2 \pi k i} = \cos(2 \pi k ) + i \sin(2 \pi k ). $$
+By the cyclic nature of trigonometric functions, 
+
+($cos(x) = cos(2 \pi k + x)$ for $k \in \mathbb{Z}$,)
+$$e^z =  \cos(0) + i \sin(0)$$
+$$ = 1 + i(0)$$
+$$ = 1.$$
+
+\vspace{15pt}
+Conversely, assume $e^z = 1$.
+
+Let $z = x + iy$ for some $x, y \in \mathbb{R}$. By Euler's identity,
+$$e^z = e^{x + iy} = e^x ( \cos y + i \sin y ) = 1.$$
+Since the RHS has no imaginary part, this implies that 
+$$e^x i \sin{y} = 0, \quad e^x \cos{y} = 1.$$
+$$\implies \sin{y} = 0, \quad \cos{y} = e^{-x}$$
+$$\implies y \in \{2 \pi k : k \in \mathbb{Z}\}$$
+$$\implies \cos{y} = 1$$
+$$\implies 1 = e^{-x}$$
+$$\implies x = 0$$
+$$\implies z = x + iy = iy,$$
+for some $y \in \{2 \pi k : k \in \mathbb{Z}\}$.
+
+$$\implies z = 2 \pi k i,$$
+for some $k \in \mathbb{Z}$.
+\end{proof}\\
+\\
+\noindent \textbf{(f)} show that every complex number $z = x + iy$ can be written in the form
+$$z = re^{i \theta},$$
+where $r$ is unique and in the range $0 \leq r < \infty$, and $\theta \in \mathbb{R}$ 
+is unique up to an integer multiple of $2 \pi$. Check that
+$$r = |z| \; \text{and} \; \theta = \arctan(y/x)$$
+whenever these formulas make sense.\}\\
+\\
+\noindent \textbf{5.} Verify that $f(x) = e^{i n x}$ is periodic with period $2 \pi$, and that
+$$ \frac{1}{2 \pi} \int^{\pi}_{-\pi} e^{inx} dx = 
+\begin{cases} 1, & n = 0 \\ 0, & n \neq 0\end{cases}$$\\
+Using Euler's identity,
+$$f = e^{inx} = \cos{nx} + i \sin{nx}$$
+Since $\cos{z} = \cos(z + 2 \pi n)$ for all $z \in \mathbb{R}$, $n \in \mathbb{N}$, and the same is true for $\sin$, we have that, for all $n \in \mathbb{N}$,
+$$f(x + 2 \pi) = \cos(n(x + 2 \pi)) + i \sin(n(x + 2 \pi))$$
+$$ = \cos{nx} + i \sin{nx} = f(x),$$
+which is the definition of having period $2 \pi$.
+
+\vspace{15pt}
+For $n=0$,
+$$e^{inx} = 1$$
+$$ \implies \frac{1}{2 \pi} \int^{\pi}_{-\pi} e^{inx} dx = \frac{1}{2 \pi} \int^{\pi}_{-\pi} 1dx$$
+$$ = \frac{1}{2 \pi}(\pi - (-\pi)) = 1.$$
+
+\vspace{15pt}
+For $n \neq 0$,
+$$\frac{1}{2 \pi} \int^{\pi}_{-\pi} e^{inx} dx = \frac{1}{2 \pi i n}\left[e^{inx}\right]^{\pi} _{-\pi}$$
+$$= \frac{1}{2 \pi i n}\left[\cos{nx} + i\sin{nx}\right]^{\pi} _{-\pi}$$
+$$= \frac{1}{2 \pi i n}\left[ \cos(\pi n) - \cos(-\pi n) + i\sin(\pi n) - i\sin(-\pi n)\right]$$
+Then, since $\cos(x) = \cos(-x)$, and $\sin(x) = -\sin(-x)$,
+$$= \frac{1}{2 \pi i n}[(\cos \pi n - \cos \pi n) + (i\sin{\pi n} + i\sin{\pi n})]$$
+$$= \frac{1}{2 \pi i n}(2i \sin{\pi n})$$
+$$= \frac{1}{\pi n} \sin{\pi n}$$
+For any integer multiple of $\pi$ we have $\sin(\pi n) = 0$. Therefore,
+$$\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{inx}dx = 0 \qquad \text{Whenever $n\neq 0$}$$
+$$.$$
+
+Use this fact to prove that, for $n.m \geq 1$, we have 
+$$=\frac{1}{\pi} \int_{-\pi}^{\pi} \cos{nx} \cos{mx} \ dx = 
+\begin{cases} 1, & n = m \\ 0, & n \neq m\end{cases}$$
+\\
+Since $\cos(x) = \frac{e^{ix}+e^{-ix}}{2}$, then $\cos(nx) = \frac{e^{inx} + e^{-inx}}{2}$. Then, 
+\begin{align*}
+&\frac{1}{\pi}\int_{-\pi}^{\pi}\cos(nx)\cos(mx)dx = \frac{1}{\pi}\int_{-\pi}^{\pi} \left(\frac{e^{inx} + e^{-inx}}{2}\right)\left(\frac{e^{imx} + e^{-imx}}{2}\right) \\
+&= \frac{1}{4\pi}\int_{-\pi}^{\pi}\left( e^{ix(m+n)} + e^{ix(n-m)} + e^{ix(m-n)} + e^{-ix(n+m)} \right)dx
+\end{align*}
+If $n=m$ then any integral with exponent not equal $0$ will equal $0$ by our first verification. Therefore,
+\begin{align*}
+&\frac{1}{4\pi}\left[0+\int_{-\pi}^{\pi}e^{ix(0)}dx + \int_{-\pi}^{\pi}e^{ix(0)}dx + 0\right]\\
+&
+\end{align*}
+\\
+and similarly 
+$$=\frac{1}{\pi} \int_{-\pi}^{\pi} \sin{nx} \sin{mx} \ dx = 
+\begin{cases} 1, & n = m \\ 0, & n \neq m\end{cases}$$
+
+and
+$$=\frac{1}{\pi} \int_{-\pi}^{\pi} \cos{nx} \cos{mx} \ dx = 
+0 \quad \text{for any} \ n, m.$$
+
+[Hint: use $e^{inx}e^{-imx} + e^{inx}e^{imx}$ and $e^{inx}e^{-imx} - e^{inx}e^{imx}$.]
+
+
+\textbf{Problems:} Complete 1.
+
+\newpage
+
+\bibliographystyle{siam}
+\bibliography{bibfile}
+\end{document}
