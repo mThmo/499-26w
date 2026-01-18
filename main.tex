@@ -39,7 +39,7 @@ Consider the following,
 \end{align*}
 Now since $|r-l| \geq 0$ and as we just demonstrated it is also $|r-l| \leq 0$ then $|r-l| =0$ which implies $r=l$. Then by way of contradicition the limit of a converging sequence of complex numbers has unique limit.
 \end{proof}
-\\
+
 The sequence $\{w_n\}_{n=1}^{\infty}$ is said to be a \textbf{Cauchy sequence} if for every $\epsilon > 0 $ there exists a positive integer $N$ such that 
 \[
 |w_n - w_m| < \epsilon \qquad \text{whenever $n,m > N$.}
@@ -65,7 +65,7 @@ And consider the following,
 \end{align*}
 $(\impliedby)$ Suppose the sequence $\{w_n\}_{n=1}^{\infty}$ is a Cauchy sequence, then $\exists n,m,N \in \mathbb{N}$ such that
 \[
-&|w_n - w_m| < \epsilon \qquad \text{ whenever $n>m,\geq N$} 
+|w_n - w_m| < \epsilon \qquad \text{ whenever $n>m,\geq N$} 
 \]
 And suppose $w_n = x_n + iy_n$ and $w_m = x_m + iy_m$ for any arbitrary real sequences $x_n,x_my_n,y_m$. Then
 \begin{align*}
@@ -93,13 +93,13 @@ converges. Let $\{a_n\}_{n=1}^{\infty}$ be a sequence of non-negative real numbe
 Let $\{a_n\}$ be a sequence of non-negative real numbers such that $\sum_{n} a_n$ converges. Assume $\{z_n\}$ is a series of complex numbers such that $|z_n| \leq a_n$ for all $n$.
 
 \vspace{15pt}
-\begin{lemma}
+%\begin{lemma}
 For any real sequence $\{a_n\}$, the infinite series $\sum_{n=1}^{\infty} a_n$ converges if
 and only if 
 $$\forall(\epsilon > 0) \exists (N \in \mathbb{N}) \text{ such that } \forall(m, l \in \{m, l : m \geq l > N\}),$$
 $$|s_m - s_l| = \biggl|\sum_{n = l+1}^{m} a_n \biggr| < \epsilon,$$
 Where $s_n$ is the $n$th partial sum of the series $\sum a_n$.
-\end{lemma}   
+%\end{lemma}   
 %(source: https://people.maths.ox.ac.uk/flynn/genus2/AnI0506/analysisI-wk6.pdf) 
 
 \vspace{15pt}
@@ -161,7 +161,7 @@ Therefore, (by the fact given at the start of Exercise 3c,) the series
 $$\sum_{n=1} ^{\infty} z_n$$
 converges.
 \end{proof}
-\\
+
 \textbf{4.} For $z\in \mathbb{C}$, we define the complex exponential by 
 \[
 e^z = \sum_{n=0}^{\infty}\frac{z^n}{n!}. 
@@ -196,10 +196,9 @@ ensuring the following,
 \]
 Therefore, by the Cauchy criterion $e^z =\sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely. Now showing convergence on a bounded subset $S$ of $\mathbb{C}$ is the same proof but just stating that $b=\sup\{|z|: z\in S\}$.
 \end{proof}
-\\
+
 \textbf{(b)} If $z_1,z_2$ are two complex numbers, prove that $e^{z_1}e^{z_2}=e^{z_1+z_2}$. [Hint: use the binomial theorem to expand $(z_1 +z_2)^n$, as well as the formula for binomial coefficients.]\\
-\\
-\\
+
 \textbf{(c)} Show that if $z$ is purely imaginary, that is, $z=iy$ with $y\in \mathbb{R}$, then
 \[
 e^{iy}=\cos(y)+i\sin(y) 
@@ -220,9 +219,9 @@ Now we recognize both of these infinite sums as sine and cosine power series and
 e^{iy} = \sum_{k=0}^{\infty}\frac{(-1)^k y^{2k}}{(2k)!} +  i\sum_{k=0}^{\infty}\frac{(-1)^k y^{2k+1}}{(2k+1)!} = \cos(y) +i\sin(y)
 \]
 \end{proof}
-\\
+
 \textbf{(e)} prove that $e^z = 1$ if and only if $z=2\pi ki$ for some integer $k$.
-\begin{proof}\\
+\begin{proof}
 $\left(\implies\right)$ Assume $z = 2 \pi k i$.
 By Euler's identity,
 $$e^z = e^{2 \pi k i} = \cos(2 \pi k ) + i \sin(2 \pi k ). $$
@@ -250,8 +249,8 @@ for some $y \in \{2 \pi k : k \in \mathbb{Z}\}$.
 
 $$\implies z = 2 \pi k i,$$
 for some $k \in \mathbb{Z}$.
-\end{proof}\\
-\\
+\end{proof}
+
 \noindent \textbf{(f)} show that every complex number $z = x + iy$ can be written in the form
 $$z = re^{i \theta},$$
 where $r$ is unique and in the range $0 \leq r < \infty$, and $\theta \in \mathbb{R}$ 
@@ -314,7 +313,119 @@ $$=\frac{1}{\pi} \int_{-\pi}^{\pi} \cos{nx} \cos{mx} \ dx =
 [Hint: use $e^{inx}e^{-imx} + e^{inx}e^{imx}$ and $e^{inx}e^{-imx} - e^{inx}e^{imx}$.]
 
 
-\textbf{Problems:} Complete 1.
+
+\textbf{Problem 1} Consider the Dirichlet problem illustrated in Figure 11. More precisely, we look for a solution of the steady-state heat equation $\Delta u =0$ in the rectangle $R= \left\{(x,y): 0 \leq x \leq \pi , 0\leq y \leq 1\right\}$ that vanishes on the vertical sides of $R$, and so that 
+\[
+u(x,0) = f_0 (x) \qquad \text{and} \qquad u(x,1) = f_1(x)
+\]
+where $f_0$ and $f_1$ are initial data which fix the temperature distribution on the horizontal sides of the rectangle.\\
+Use separation of variables to show that if $f_0$ and $f_1$ have Fourier expressions
+\[
+f_0(x) = \sum_{k=1}^{\infty}A_k\sin kx \qquad \text{and} \qquad f_1(x) = \sum_{k=1}^{\infty}B_k\sin kx,
+\]
+then
+\[
+u(x,y) = \sum_{k=1}^{\infty}\left(\frac{\sinh{k(1-y)}}{\sinh{k}}A_k + \frac{\sinh{ ky}}{\sinh{ k}}B_k\right)\sin kx.
+\]
+We recall the definitions of the hyperbolic sine and cosine functions:
+\[
+\sinh{x = \frac{e^x - e^{-x}}{2}} \qquad \text{and} \qquad \cosh{x  =\frac{e^x + e^{-x}}{2}}.
+\]
+\textbf{Solution:}
+Suppose $u(x,y) = P(x)Q(y)$ then using this in the Laplacian $\Delta u = 0$ we get:
+\begin{align*}
+&P''(x)Q(y) = -P(x)Q''(y) \\
+&\frac{P''(x)}{P(x)} = -\frac{Q''(y)}{Q(y)}\\
+&\implies \frac{P''(x)}{P(x)} = -\lambda\\
+&\implies P''(x)+\lambda P(x) = 0\\
+&\implies -\frac{Q''(y)}{Q(y)} = -\lambda \\
+&\implies Q''(y) - \lambda Q(y) = 0
+\end{align*}
+Now we must check what sign $\lambda$ must have. We first check the case $\lambda = 0$ and input our initial conditions:
+\begin{align*}
+&P''(x) = 0\\
+&\implies P'(x) = K \\
+&\implies P(x) = Kx + G\\
+&\implies u(0,t)=P(0) = G  =0 
+&\implies G=0 \\
+&\implies P(x) = Kx\\
+&\implies u(\pi,t) = P(\pi) = K\pi =0 
+&\implies K = 0\\
+&\implies u(x,t)= 0
+\end{align*}
+Therefore, $\lambda \neq 0$. Now we check the case where $\lambda <0$ that is $\lambda = -r^2$:
+\begin{align*}
+&P''(x) -r^2P(x) = 0 \\
+&\implies e^{kx}\left(k^2 -r^2\right) = 0\\
+&\implies k= \pm r\\
+&\implies P(x) = Ae^{rx} + Be^{-rx}\\
+&\implies u(0,t)=P(0) = A+B =0\\
+&\implies u(\pi,t) = P(\pi) = Ae^{r\pi} - Ae^{-r\pi}\\
+&\implies e^{r\pi} = e^{-r\pi} \implies 2r=0 \\
+&\implies r= 0\\
+&\implies P(x) = A-A =0
+\end{align*}
+Therefore, $\lambda >0$. Let $\lambda = k^2$:
+\begin{align*}
+&P''(x) +k^2P(x) = 0\\
+&\implies e^{mx}\left(m^2 + k^2\right)=0\\
+&\implies k = \pm ik\\
+&\implies P(x) = Ae^{ikx}+Be^{-ikx} =A\cos(kx)+iA\sin(kx)+B\cos(kx)-iB\sin(kx)\\
+&= (A+B)\cos(kx) +(iA-iB)\sin(kx) \\
+&\implies P(x) = C\cos(kx)+D\sin(kx)\\
+&\implies u(0,t) = P(0) = C=0 \implies C=0\\
+&\implies u(\pi,t) = P(\pi) =0 \\
+&\implies P(x) = D\sin(kx)
+\end{align*}
+Since $\lambda = k^2$ does not lead to any $u(x,t)=0$ solutions then we use thing in our ODE in terms of $y$:
+\begin{align*}
+&Q''(y) -k^2Q(y) =0\\
+&\implies e^{my}\left(m^2 - k^2\right) = 0\\
+&\implies m = \pm k\\
+&\implies Q(y) = Ae^{-ky} +Be^{ky}
+\end{align*}
+Now we introduce $\sinh$ and $\cosh$ in the following manner:
+\begin{align*}
+&\sinh(ky) = \frac{1}{2}e^{ky} -\frac{1}{2}e^{-ky}\\
+&\cosh(ky) = \frac{1}{2}e^{ky} + \frac{1}{2}e^{-ky}\\
+&e^{ky} = \sinh(ky) + \cosh(ky)\\
+&e^{-ky} = \cosh(ky)-\sinh(ky) 
+\end{align*}
+Therefore, we can write $Q(y)$ as follows:
+\begin{align*}
+&Q(y)=A\left(\cosh(ky)-\sinh(ky)\right) + B\left(\sinh(ky)+\cosh(ky)\right)\\
+&Q(y) = (A+B)\cosh(ky) + (B-A)\sinh(ky) \\
+&Q(y) = E\cosh(ky)+F\sinh(ky)
+\end{align*}
+Therefore, we can write $u(x,y)$ as follows and extend to the its Fourier sum as well:
+\begin{align*}
+&u(x,y)_k = D\sin(kx)\left(E\cosh(ky)+F\sinh(ky)\right) \\
+&u(x,y)= \sum_{k=1}^{\infty}D_k\sin(kx)\left(E_k\cosh(ky)+F_k\sinh(ky)\right)
+\end{align*}
+Now we'll ensure our function $u(x,y)$ satisfies the initial conditions in terms of $y$:
+\begin{align*}
+&u(x,0) = \sum_{k=1}^{\infty} D_k E_k\sin(kx) = \sum_{k=1}^{\infty}A_k \sin(kx) \\
+&\implies A_k = D_k E_k\\
+&u(x,y) = \sum_{k=1}^{\infty} A_k \sin(kx)\cosh(ky) + D_k F_k \sin(kx)\sinh(ky)\\
+&u(x,1) = \sum_{k=1}^{\infty} A_k \sin(kx)\cosh(k) + D_kF_k\sin(kx)\sinh(k) = \sum_{k=1}^{\infty}B_k \sin(kx) \\
+&\implies D_k F_k \sin(kx)\sinh(k) = B_k\sin(kx) - A_k\sin(kx)\cosh(k) \\
+&\implies D_k F_k = \frac{B_k}{\sinh(k)} - \frac{A_k \cosh(k)}{\sinh(k)}\\
+&u(x,y) = \sum_{k=1}^{\infty}A_k \sin(kx)\cosh(ky) + \left(\frac{B_k}{\sinh(k)} - \frac{A_k \cosh(k)}{\sinh(k)}\right)\cdot \sin(kx)\sinh(ky)\\
+&u(x,y) = \sum_{k=1}^{\infty}A_k \sin(kx)\cosh(ky) + B_k\frac{ \sin(kx)\sinh(ky)}{\sinh(k)} - A_k\frac{ \cosh(k)\sin(kx)\sinh(ky)}{\sinh(k)} \\
+&u(x,y) = \sum_{k=1}^{\infty} \left(\sin(kx)\cosh(ky) -\frac{\cosh(k)\sin(kx)\sinh(ky)}{\sinh(k)}\right)A_k + B_k\left(\frac{\sin(kx)\sinh(ky)}{\sinh(k)}\right) \\
+&u(x,y) = \sum_{k=1}^{\infty} \sin(kx)\left[\left(\frac{\cosh(ky)\sinh(k) - \cosh(k)\sinh(ky)}{\sinh(k)}\right)A_k + B_k\left(\frac{\sinh(ky)}{\sinh(k)}\right)\right]
+\end{align*}
+Now we compute the coeffecients of $A_k$ and $B_k$ in the following manner:
+\begin{align*}
+&\frac{\cosh(ky)\sinh(k) - \cosh(k)\sinh(ky)}{\sinh(k)} = \frac{(\frac{1}{2}e^{ky} + \frac{1}{2}e^{-ky})(\frac{1}{2}e^{k}-\frac{1}{2}e^{-k}) - (\frac{1}{2}e^{k} +\frac{1}{2}e^{-k})(\frac{1}{2}e^{ky}- \frac{1}{2}e^{-ky})}{\sinh(k)} \\
+&= \frac{(\frac{1}{4}e^{k(1+y)} -\frac{1}{4}e^{k(y-1)} +\frac{1}{4}e^{k(1-y)} - \frac{1}{4}e^{-k(1+y)}) - (\frac{1}{4}e^{k(1+y)} -\frac{1}{4}e^{k(1-y)} + \frac{1}{4}e^{k(y-1)} - \frac{1}{4}e^{-k(1+y)})}{\sinh(k)} \\
+&= \frac{\frac{1}{4}e^{k(1-y)}-\frac{1}{4}e^{-k(1-y)} +\frac{1}{4}e^{k(1-y)} - \frac{1}{4}e^{-k(1-y)}}{\sinh(k)} \\
+&= \frac{\frac{\sinh(k(1-y))}{2}+\frac{\sinh(k(1-y))}{2}}{\sinh(k)} = \frac{\sinh(k(1-y))}{\sinh(k)}
+\end{align*}
+Therefore we arrive at the following simplified expression for $u(x,y)$:
+\[
+\boxed{u(x,y) = \sum_{k=1}^{\infty}\left[\frac{\sinh(k(1-y))}{\sinh(k)}A_k +\frac{\sinh(ky)}{\sinh(k)}B_k\right]\sin(kx)}
+\]
 
 \newpage
 \section{Basic Properties of Fourier Series}
