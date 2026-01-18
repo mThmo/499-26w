@@ -313,6 +313,63 @@ $$=\frac{1}{\pi} \int_{-\pi}^{\pi} \cos{nx} \cos{mx} \ dx =
 [Hint: use $e^{inx}e^{-imx} + e^{inx}e^{imx}$ and $e^{inx}e^{-imx} - e^{inx}e^{imx}$.]
 
 
+\noindent \textbf{(11)}
+Show that if $n \in \mathbb{Z}$ the only solutions of the differential equation 
+$$r^2 F''(r) + r F'(r) - n^2 F(r) = 0,$$
+which are twice differentiable when $r > 0$, are given by linear combinations of $r^n$ and $r^{-n}$ when $n \neq 0$, and $1$ and $\log r$ when $n = 0$.
+
+\vspace{15pt}
+[Hint: If $F$ solves the equation, write $F(r) = g(r)r^n$, find the equation satisfied by $g$, and conclude that $rg'(r) + 2ng(r) = c$ where $c$ is a constant.]
+
+\vspace{15pt}
+Given $F(r)$ is twice differentiable and solves
+\begin{align*} r^2 F''(r) + r F'(r) - n^2 F(r) = 0, \end{align*}
+
+Define $g$ such that \begin{align*}
+    F(r) &=: g(r) r^n \\
+    \implies F'(r) &= ng(r)r^{n-1} + g'(r)r^n\\
+    \implies F''(r) &= n(n-1)g(r)r^{n-2} + ng'(r)r^{n-1} + ng'(r)r^{n-1} + g''(r)r^n\\
+    &= (n^2 - n)g(r)r^{n-2} + 2ng'(r)r^{n-1} + g''(r)r^n \\
+    \implies 0 &= r^2 \biggl((n^2 - n)g(r)r^{n-2} + 2ng'(r)r^{n-1} + g''(r)r^n\biggr) +
+    r\biggl(ng(r)r^{n-1} + g'(r)r^n\biggr) - n^2\biggl(g(r) r^n\biggr)\\
+    &= (n^2 - n)g(r)r^n + ng(r)r^n + 2ng'(r)r^{n+1} + g'(r)r^{n+1}
+    + g''(r)r^{n+2} - n^2g(r)r^n \\
+    &= (n^2 - n + n - n^2)g(r)r^n + (2n + 1)g'(r)r^{n+1} + g''(r)r^{n+2} \\
+    \implies 0 &= (2n+ 1)g'(r) + g''(r)r \\
+\end{align*}
+
+Solve the second order ODE by reducing to first order. Let
+\begin{align*}
+    u(r) &:= g'(r) \\
+    \implies u'(r) &= g''(r) \\
+    \implies ru' &= -(2n+1)u \\
+    \int \frac{1}{u} \frac{du}{dr}dr &= -(2n+1)\int \frac{1}{r}dr \\
+    \log{|u|} &= (-2n+1)\log{|r|} + (2n+1)C \\
+    u &= e^{-(2n+1)\log{|r|}} e^{(2n+1)C}\\
+    &= e^{-(2n+1)}\bigl(e^{\log{|r|}}\bigr)^{-(2n+1)} \\
+    &= Dr^{-(2n+1)} \\
+    \int u = g &= D\int r^{-(2n+1)} dr \\
+    F(r) &= r^{n} D\int r^{-(2n+1)} dr \\
+\end{align*}
+
+\vspace{15pt}
+For $n = 0$, 
+\begin{align*}
+    F(r) &= D \int r^{-1} dr \\
+    &= D \log |r| + DE \\
+    &= A \log|r| + B .\\
+\end{align*}
+
+
+\vspace{15pt}
+For $n \neq 0$, 
+\begin{align*}
+    F(r) &= D r^{n} \int r^{-(2n+1)} dr \\
+    &= D r^{n}r^{-2n} \frac{1}{-2n} + Dr^n C\\
+    &= Ar^{-n} + Br^n. \\
+\end{align*}
+
+
 
 \textbf{Problem 1} Consider the Dirichlet problem illustrated in Figure 11. More precisely, we look for a solution of the steady-state heat equation $\Delta u =0$ in the rectangle $R= \left\{(x,y): 0 \leq x \leq \pi , 0\leq y \leq 1\right\}$ that vanishes on the vertical sides of $R$, and so that 
 \[
@@ -426,6 +483,7 @@ Therefore we arrive at the following simplified expression for $u(x,y)$:
 \[
 \boxed{u(x,y) = \sum_{k=1}^{\infty}\left[\frac{\sinh(k(1-y))}{\sinh(k)}A_k +\frac{\sinh(ky)}{\sinh(k)}B_k\right]\sin(kx)}
 \]
+
 
 \newpage
 \section{Basic Properties of Fourier Series}
