@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1768772666.66284 "main.aux" "main.bbl" "main" 1768772668.77092 0
-  "./bibfile.bib" 1768768680 270 5a87227a5ba637bbcb81131c7f73b6e2 ""
+["bibtex ch1"] 1768783583.96568 "ch1.aux" "ch1.bbl" "ch1" 1768783585.836 0
+  "./bibfile1.bib" 1768768680 270 5a87227a5ba637bbcb81131c7f73b6e2 ""
   "C:/Program Files/MiKTeX/bibtex/bst/bibtex/siam.bst" 1291864356 19403 812681d329611d2a1625ad7ae5186edc ""
-  "main.aux" 1768772667 361 94ff25e9524cee7499b75164b2a03204 "pdflatex"
+  "ch1.aux" 1768783584 239 6cd2325dec8a5201802e1afb59e4ffb7 "pdflatex"
   (generated)
-  "main.bbl"
-  "main.blg"
+  "ch1.bbl"
+  "ch1.blg"
   (rewritten before read)
-["pdflatex"] 1768772667.04699 "c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/main.tex" "main.pdf" "main" 1768772668.77167 0
+["pdflatex"] 1768783584.40324 "c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/ch1/ch1.tex" "ch1.pdf" "ch1" 1768783585.8368 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -61,12 +61,12 @@
   "C:/Program Files/MiKTeX/tex/latex/parskip/parskip.sty" 1615976160 4288 94714aa7f535440f33181fec52a31963 ""
   "C:/Users/Administrator/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1718279140 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/Administrator/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1718279150 24226256 7ded4b1510882ade0d894589ffcde1fb ""
-  "c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/main.tex" 1768772661 22893 cc94f2496e4fb1088b72cfe6ce3fb67a ""
-  "main.aux" 1768772667 361 94ff25e9524cee7499b75164b2a03204 "pdflatex"
-  "main.bbl" 1768772666 237 5b8d26c975825324132424350bc41c02 "bibtex main"
-  "main.tex" 1768772661 22893 cc94f2496e4fb1088b72cfe6ce3fb67a ""
+  "c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/ch1/ch1.tex" 1768783581 22769 7ef5581df6607090c2fcfebb7118de1b ""
+  "ch1.aux" 1768783584 239 6cd2325dec8a5201802e1afb59e4ffb7 "pdflatex"
+  "ch1.bbl" 1768783584 237 5b8d26c975825324132424350bc41c02 "bibtex ch1"
+  "ch1.tex" 1768783581 22769 7ef5581df6607090c2fcfebb7118de1b ""
   (generated)
-  "main.aux"
-  "main.log"
-  "main.pdf"
+  "ch1.aux"
+  "ch1.log"
+  "ch1.pdf"
   (rewritten before read)

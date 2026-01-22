@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.13)  18 JAN 2026 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.13)  18 JAN 2026 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/main.tex
-(c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/main.tex
+**c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/ch1/ch1.tex
+(c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/ch1/ch1.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -144,8 +144,8 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box53
-) (main.aux)
-\openout1 = `main.aux'.
+) (ch1.aux)
+\openout1 = `ch1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -237,7 +237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--262
 
  []
 
-[6] [7] [8] [9] [10] [11] [12] [13] (main.bbl) [14] (main.aux)
+[6] [7] [8] [9] [10] [11] [12] (ch1.bbl) [13] (ch1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -245,16 +245,16 @@ L3 programming layer <2024-03-14>
  ) 
 Here is how much of TeX's memory you used:
  3080 strings out of 474423
- 45395 string characters out of 5751509
- 1947496 words of memory out of 5000000
+ 45409 string characters out of 5751509
+ 1949496 words of memory out of 5000000
  25421 multiletter control sequences out of 15000+600000
  561328 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,65p,691b,203s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,13n,65p,694b,203s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (14 pages, 222529 bytes).
+Output written on ch1.pdf (13 pages, 221043 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
