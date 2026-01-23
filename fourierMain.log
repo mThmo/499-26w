@@ -1,0 +1,524 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.13)  23 JAN 2026 08:00
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/fourierMain.tex
+(c:/Users/Administrator/Desktop/computer/schoool/2026__WINTER/499_FourierAnalysis/fourierCloneRepo/499-26w/fourierMain.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+(C:\Program Files\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Program Files\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+ (C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count197
+\calc@Bcount=\count198
+\calc@Adimen=\dimen141
+\calc@Bdimen=\dimen142
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count199
+\calc@Cskip=\skip52
+) (C:\Program Files\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen143
+\ESO@tempdimb=\dimen144
+ (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+) (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count266
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
+)
+\AM@pagewidth=\dimen147
+\AM@pageheight=\dimen148
+\AM@fboxrule=\dimen149
+ (C:\Program Files\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count267
+\AM@pagebox=\box51
+\AM@global@opts=\toks18
+\AM@pagecnt=\count268
+\AM@toc@title=\toks19
+\AM@lof@heading=\toks20
+\c@AM@survey=\count269
+\AM@templatesizebox=\box52
+) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count270
+\l__pdf_internal_box=\box53
+) (fourierMain.aux)
+\openout1 = `fourierMain.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+ (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count271
+\scratchdimen=\dimen150
+\scratchbox=\box54
+\nofMPsegments=\count272
+\nofMParguments=\count273
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count274
+\MPscratchDim=\dimen151
+\MPnumerator=\count275
+\makeMPintoPDFobject=\count276
+\everyMPtoPDFconversion=\toks22
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+ [1
+
+
+{C:/Users/Administrator/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<ch1/ch1.pdf, id=7, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf>
+Package pdftex.def Info: ch1/ch1.pdf  used on input line 15.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<ch1/ch1.pdf, id=9, page=1, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 1>
+Package pdftex.def Info: ch1/ch1.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 1>
+Package pdftex.def Info: ch1/ch1.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [2]
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 1>
+Package pdftex.def Info: ch1/ch1.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 1>
+Package pdftex.def Info: ch1/ch1.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 1>
+Package pdftex.def Info: ch1/ch1.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [3
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=78, page=2, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 2>
+Package pdftex.def Info: ch1/ch1.pdf , page2 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 2>
+Package pdftex.def Info: ch1/ch1.pdf , page2 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 2>
+Package pdftex.def Info: ch1/ch1.pdf , page2 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [4
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=88, page=3, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 3>
+Package pdftex.def Info: ch1/ch1.pdf , page3 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 3>
+Package pdftex.def Info: ch1/ch1.pdf , page3 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 3>
+Package pdftex.def Info: ch1/ch1.pdf , page3 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [5
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=92, page=4, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 4>
+Package pdftex.def Info: ch1/ch1.pdf , page4 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 4>
+Package pdftex.def Info: ch1/ch1.pdf , page4 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 4>
+Package pdftex.def Info: ch1/ch1.pdf , page4 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [6
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=96, page=5, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 5>
+Package pdftex.def Info: ch1/ch1.pdf , page5 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 5>
+Package pdftex.def Info: ch1/ch1.pdf , page5 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 5>
+Package pdftex.def Info: ch1/ch1.pdf , page5 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [7
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=113, page=6, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 6>
+Package pdftex.def Info: ch1/ch1.pdf , page6 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 6>
+Package pdftex.def Info: ch1/ch1.pdf , page6 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 6>
+Package pdftex.def Info: ch1/ch1.pdf , page6 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [8
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=117, page=7, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 7>
+Package pdftex.def Info: ch1/ch1.pdf , page7 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 7>
+Package pdftex.def Info: ch1/ch1.pdf , page7 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 7>
+Package pdftex.def Info: ch1/ch1.pdf , page7 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [9
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=127, page=8, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 8>
+Package pdftex.def Info: ch1/ch1.pdf , page8 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 8>
+Package pdftex.def Info: ch1/ch1.pdf , page8 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 8>
+Package pdftex.def Info: ch1/ch1.pdf , page8 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [10
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=131, page=9, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 9>
+Package pdftex.def Info: ch1/ch1.pdf , page9 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 9>
+Package pdftex.def Info: ch1/ch1.pdf , page9 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 9>
+Package pdftex.def Info: ch1/ch1.pdf , page9 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [11
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=135, page=10, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 10>
+Package pdftex.def Info: ch1/ch1.pdf , page10 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 10>
+Package pdftex.def Info: ch1/ch1.pdf , page10 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 10>
+Package pdftex.def Info: ch1/ch1.pdf , page10 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [12
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=139, page=11, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 11>
+Package pdftex.def Info: ch1/ch1.pdf , page11 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 11>
+Package pdftex.def Info: ch1/ch1.pdf , page11 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 11>
+Package pdftex.def Info: ch1/ch1.pdf , page11 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [13
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=144, page=12, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 12>
+Package pdftex.def Info: ch1/ch1.pdf , page12 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 12>
+Package pdftex.def Info: ch1/ch1.pdf , page12 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 12>
+Package pdftex.def Info: ch1/ch1.pdf , page12 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [14
+
+ <./ch1/ch1.pdf>]
+<ch1/ch1.pdf, id=148, page=13, 614.295pt x 794.97pt>
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 13>
+Package pdftex.def Info: ch1/ch1.pdf , page13 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 13>
+Package pdftex.def Info: ch1/ch1.pdf , page13 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch1/ch1.pdf Graphic file (type pdf)
+<use ch1/ch1.pdf, page 13>
+Package pdftex.def Info: ch1/ch1.pdf , page13 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [15
+
+ <./ch1/ch1.pdf>]
+<ch2/ch2.pdf, id=158, 614.295pt x 794.97pt>
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf>
+Package pdftex.def Info: ch2/ch2.pdf  used on input line 16.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<ch2/ch2.pdf, id=160, page=1, 614.295pt x 794.97pt>
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 1>
+Package pdftex.def Info: ch2/ch2.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 1>
+Package pdftex.def Info: ch2/ch2.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 1>
+Package pdftex.def Info: ch2/ch2.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 1>
+Package pdftex.def Info: ch2/ch2.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 1>
+Package pdftex.def Info: ch2/ch2.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [16
+
+ <./ch2/ch2.pdf>]
+<ch2/ch2.pdf, id=189, page=2, 614.295pt x 794.97pt>
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 2>
+Package pdftex.def Info: ch2/ch2.pdf , page2 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 2>
+Package pdftex.def Info: ch2/ch2.pdf , page2 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 2>
+Package pdftex.def Info: ch2/ch2.pdf , page2 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [17
+
+ <./ch2/ch2.pdf>]
+<ch2/ch2.pdf, id=193, page=3, 614.295pt x 794.97pt>
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 3>
+Package pdftex.def Info: ch2/ch2.pdf , page3 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 3>
+Package pdftex.def Info: ch2/ch2.pdf , page3 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 3>
+Package pdftex.def Info: ch2/ch2.pdf , page3 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [18
+
+ <./ch2/ch2.pdf>]
+<ch2/ch2.pdf, id=197, page=4, 614.295pt x 794.97pt>
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 4>
+Package pdftex.def Info: ch2/ch2.pdf , page4 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 4>
+Package pdftex.def Info: ch2/ch2.pdf , page4 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 4>
+Package pdftex.def Info: ch2/ch2.pdf , page4 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [19
+
+ <./ch2/ch2.pdf>]
+<ch2/ch2.pdf, id=202, page=5, 614.295pt x 794.97pt>
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 5>
+Package pdftex.def Info: ch2/ch2.pdf , page5 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 5>
+Package pdftex.def Info: ch2/ch2.pdf , page5 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2/ch2.pdf Graphic file (type pdf)
+<use ch2/ch2.pdf, page 5>
+Package pdftex.def Info: ch2/ch2.pdf , page5 used on input line 16.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [20
+
+ <./ch2/ch2.pdf>]
+<ch2b/ch2b.pdf, id=242, 614.295pt x 794.97pt>
+File: ch2b/ch2b.pdf Graphic file (type pdf)
+<use ch2b/ch2b.pdf>
+Package pdftex.def Info: ch2b/ch2b.pdf  used on input line 17.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<ch2b/ch2b.pdf, id=244, page=1, 614.295pt x 794.97pt>
+File: ch2b/ch2b.pdf Graphic file (type pdf)
+<use ch2b/ch2b.pdf, page 1>
+Package pdftex.def Info: ch2b/ch2b.pdf , page1 used on input line 17.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ch2b/ch2b.pdf Graphic file (type pdf)
+<use ch2b/ch2b.pdf, page 1>
+Package pdftex.def Info: ch2b/ch2b.pdf , page1 used on input line 17.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2b/ch2b.pdf Graphic file (type pdf)
+<use ch2b/ch2b.pdf, page 1>
+Package pdftex.def Info: ch2b/ch2b.pdf , page1 used on input line 17.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2b/ch2b.pdf Graphic file (type pdf)
+<use ch2b/ch2b.pdf, page 1>
+Package pdftex.def Info: ch2b/ch2b.pdf , page1 used on input line 17.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ch2b/ch2b.pdf Graphic file (type pdf)
+<use ch2b/ch2b.pdf, page 1>
+Package pdftex.def Info: ch2b/ch2b.pdf , page1 used on input line 17.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [21
+
+ <./ch2b/ch2b.pdf>] (fourierMain.bbl [22
+
+]) [23] (fourierMain.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 3193 strings out of 474423
+ 51592 string characters out of 5751509
+ 1926496 words of memory out of 5000000
+ 25526 multiletter control sequences out of 15000+600000
+ 562710 words of font info for 51 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,17n,79p,334b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on fourierMain.pdf (23 pages, 303898 bytes).
+PDF statistics:
+ 305 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+
